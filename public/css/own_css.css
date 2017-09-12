@@ -1,0 +1,145 @@
+/*!
+ * This file is shared file *.css
+ *
+ * Author       numbrCode
+ * Copyright   2017 numbrCode
+ * Licensed under MIT.
+ */
+
+/* Bootstrap3 */
+.navbar-inverse {
+background-color: #428bca;
+    border-color: #428bca;
+}
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:focus, .navbar-inverse .navbar-nav > .active > a:hover {
+	color: #fff;
+	background-color: #4671D5;
+}
+.navbar-inverse .navbar-brand {
+    color: #FFDD00;
+}
+.navbar-inverse .navbar-nav > li > a {
+		color: #FFE540;
+}
+/* ./Bootstrap3 */
+
+
+.own-container {
+  margin: 4px;  
+}
+
+.own_item {
+  visibility: visible;
+}
+
+.own-message1 {
+  border: 2px solid #ccccDD;
+  border-radius: 4px;
+  margin-bottom: 10px;
+	background-color: #FFFFEE;
+}
+
+.own-message2 {
+  border-radius: 4px;
+  background: #eeeeee;
+  margin-top: 4px;
+  margin-bottom: 10px;
+}
+
+.own-message {
+  background: #eeeeee;
+  width: 98%;
+  margin: 4px;
+  padding: 4px;
+  border-radius: 4px;
+}
+
+.own-form-elm {
+  margin-bottom: 2px;
+}
+
+.own-add {
+  background: #FFFFCC;
+  margin: 4px;
+  padding: 4px;
+  border-radius: 8px;
+}
+
+.own-bttn-delete{
+    margin: 4px;
+}
+  /* <hr id="hrWidth"> */
+.hrWidth {
+  margin: 0;
+  width: 60%;
+}
+
+.own-color-add-glyphicon {
+  color: blue;
+}
+
+/* Dialogs "Alert", "Confirm" */
+.own-glyphicon-ok {
+	color: #3c763d;
+	float: left;
+	margin: 0 7px 50px 0;
+}
+.own-glyphicon-remove {
+	color: #a94442;
+	float: left;
+	margin: 0 7px 50px 0;
+}
+.own-glyphicon-alert {
+	color: #a94442;
+	float: left;
+	margin: 0 7px 50px 0;
+	height: auto;
+}
+.own-dialog-confirm {
+	display:none;
+}
+/* ./Dialogs "Alert", "Confirm" */
+
+/* 'Разделённый доступ' https://divided-access.yoursite.com/# */
+h1{
+	font-size: 24px;
+}
+.own-exit {
+	margin-left: 10px;
+}
+.btn-success:hover {
+    color: #fff;
+    background-color: #449d44;
+    border-color: #398439;
+}
+.own-current, .nav>li>a:focus {
+	background-color: #B0C4DE;
+}
+.own-container {
+	margin-top: 15px;
+}
+.own-first-page {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+/* Search */
+.own-ul-search {
+	height: auto;
+}
+.list-unstyled > li > a, .list-unstyled > li > a:hover, .list-unstyled > li > a:visited {
+	/*color: #999;*/
+	color: red;
+	text-decoration: none;
+}
+.own-button-search {
+	margin-top: 2px;
+}
+.own-li-search:hover, .own-li-search:focus {
+	background-color: #286090;
+	color: white;
+	cursor: default;
+}
+/* ./Search */
+
+/* ./'Разделённый доступ' https://divided-access.yoursite.com/# */

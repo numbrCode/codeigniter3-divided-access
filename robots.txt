@@ -1,0 +1,37 @@
+# Для Yandex (Яндекса)
+# https://help.yandex.ru/webmaster/controlling-robot/robots-txt.xml
+
+# Директива User-agent не будет использована роботами Яндекса всеми другими роботами других поисковиков
+User-agent: *
+# Запрещает скачивать все страницы - (За коментить для проверки удобства просмотра на мобильных устройствах Google'ом)
+Disallow: /
+
+## Для http://dvlp.mary-p.ru/ - проверка удобства просмотра на мобильных устройствах Google'ом
+## (https://www.google.com/webmasters/tools/mobile-friendly/?url=http%3A%2F%2Fdvlp.mary-p.ru%2F)
+## Разрешает скачивать все файлы для Всех (Googlle, Yandex)
+#Allow: /index.php
+
+# Для Яндекса
+# Блокирует доступ ко всему сайту 
+User-agent: Yandex
+Disallow: /
+
+# YaDirectFetcher скачивает целевые страницы рекламных объявлений для проверки их доступности
+# и уточнения тематики, что необходимо для их размещения в поисковой выдаче и на сайтах-партнерах.
+User-agent: YaDirectFetcher
+Disallow: /
+
+# YandexCalendar регулярно скачивает файлы календарей по инициативе пользователей,
+# которые часто располагаются в запрещенных для индексации каталогах.
+User-agent: YandexCalendar
+Disallow: /*.ics$
+
+# YandexDirect скачивает информацию о контенте сайтов-партнеров Рекламной сети,
+# чтобы уточнить их тематику для подбора релевантной рекламы.
+User-agent: YandexDirect
+Disallow: /*.png$
+
+# YandexDirectDyn — робот генерации динамических баннеров.
+User-agent: YandexDirectDyn
+Disallow: /static/*.png$
+# (end) Для Яндекса
