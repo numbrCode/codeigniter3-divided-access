@@ -87,7 +87,6 @@ class Own_library {
 	 */
 	public function get_names_pages()
 	{
-			//$names_pages = array('pizza', 'dough', 'rolls', 'rice');
 		$names_pages = array(
 												 '1' => array('pizza','Пицца','ПИЦЦА','пицца'),
 												 '2' => array('dough','Тесто','ТЕСТО','тесто'),
@@ -109,10 +108,8 @@ class Own_library {
 	public function get_pages_group_access($number_group)
 	{
 		$names_pages = $this->get_names_pages();
-			//return $names_pages;
 
 		/* Группа '1' по имени 'manager' имеет доступ к страницам 'pizza','ПИЦЦА'; 'dough','ТЕСТО'; 'rolls','РОЛЛЫ'; 'rice','РИС' */
-			//$pages_group_access['1'] = array('0' => 'manager','1' => $names_pages[1][0], '2' => $names_pages[2][0], '3' => $names_pages[3][0], '4' => $names_pages[4][0]);
 		$pages_group_access['1'] = array(
 																			'0' => 'manager',
 																			'1' => array(
@@ -134,7 +131,6 @@ class Own_library {
 																		);
 
 		/* Группа '2' по имени 'china' имеет доступ к страницам 'pizza','ПИЦЦА'; 'dough','ТЕСТО' */
-			//$pages_group_access['2'] = array('0' => 'china','1' => $names_pages[1][0], '2' => $names_pages[2][0]);
 		$pages_group_access['2'] = array(
 																			'0' => 'china',
 																			'1' => array(
@@ -148,7 +144,6 @@ class Own_library {
 																		);
 
 		/* Группа '3' по имени 'sushi' имеет доступ к страницам 'rolls','РОЛЛЫ'; 'rice','РИС' */
-			//$pages_group_access['3'] = array('0' => 'sushi','1' => $names_pages[3][0], '2' => $names_pages[4][0]);
 		$pages_group_access['3'] = array(
 																			'0' => 'sushi',
 																			'1' => array(
@@ -163,6 +158,4 @@ class Own_library {
 		
 		return $pages_group_access[$number_group];
 	}
-
-
 }

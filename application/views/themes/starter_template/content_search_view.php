@@ -12,9 +12,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						<?php foreach ($content_page as $key => $value): ?>
 							 <div class="row">
 									<div class="col-xs-12 panel-warning">
-										 <!--<div class="content-box-header panel-heading">-->
-												<!--<div class="panel-title ">111111</div>-->
-										 <!--</div>-->
 										 <div class="panel-body text-justify bg-warning own-first-page">
 											 <?php echo $value; ?>
 										 </div>

@@ -19,11 +19,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			
 			<label for="inputPassword" class="sr-only">Пароль</label>
 			<input type="password" id="inputPassword" class="form-control" placeholder="Пароль" required="required" pattern="^[A-Za-z0-9-.\s]{3,}">
-<!--	<div class="checkbox">
-				<label>
-					<input type="checkbox" value="remember-me" disabled> Запомнить меня (отключено)
-				</label>
-			</div>-->
+
 			<p class="text-danger own-ajax-ask hidden">Извините, авторизация не прошла. Повторите, пожалуйста ввод.</p>
 			<button class="btn btn-lg btn-primary btn-block own-bttn-add" type="submit">Войти</button>
 		</form>

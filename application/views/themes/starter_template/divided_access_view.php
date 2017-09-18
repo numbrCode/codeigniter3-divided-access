@@ -60,7 +60,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<footer class="footer">
       <div class="container">
         <div class="col-md-10 col-md-offset-1">
-					<p class="text-muted text-right small"><span class="small">Code licensed under <a class="mit_a" href="https://en.wikipedia.org/wiki/MIT_License" target="_blank">MIT</a>,<br>documentation under <a href="http://creativecommons.org/licenses/by/3.0/" target="_blank">CC BY 3.0</a></span>.<br><span class="small">&nbsp;&copy;&nbsp;Валерий Голованов,&nbsp;&nbsp;2017&nbsp;&nbsp;<a href="http://www.yoursite.com" title="Переход на сайт программиста и дизайнера этого сайта - Валерия Голованова: www.yoursite.com." target="_blank">www.yoursite.com</a>.</span></p>
+					<p class="text-muted text-right small"><span class="small">Code licensed under <a class="mit_a" href="https://en.wikipedia.org/wiki/MIT_License" target="_blank">MIT</a>,<br>documentation under <a href="http://creativecommons.org/licenses/by/3.0/" target="_blank">CC BY 3.0</a></span>.<br><span class="small">&nbsp;&copy;&nbsp;numbrCode,&nbsp;&nbsp;2017&nbsp;&nbsp;<a href="http://www.yoursite.com" title="Переход на сайт программиста и дизайнера этого сайта - numbrCode: www.yoursite.com." target="_blank">www.yoursite.com</a>.</span></p>
 				</div>
       </div>
     </footer>

@@ -18,12 +18,7 @@ class Divided_access_controller extends CI_Controller {
 	public function __construct()
 	{
 		parent::__construct();
-		// Your own constructor code
-		
-			///* вывод ВСЕХ ошибок на экран (http://phpfaq.ru/sessions) */
-			//ini_set('display_errors',1);
-			//error_reporting(E_ALL);
-		
+
 		/* Loading this Helper */
 		$this->load->helper('url');
 		
@@ -59,21 +54,16 @@ class Divided_access_controller extends CI_Controller {
 	 */
 	public function index()
 	{
-			//$this->session->set_userdata('access', 'yes');		/* Разрешение доступа. Установка флага доступа в сессии */
-			//$this->session->unset_userdata('access');					/* Запрет доступа. Сброс флага доступа в сессии */
 		$access = $this->session->access;
-			//echo '$access = '.$access.'<br>';
-		
+
 		if($access == NULL)			/* Да. Доступ запрещён. (В начале пути) */
 		{
 			$this->access_no();
-				//$this->session->set_userdata('access', 'yes');		/* Разрешение доступа. Установка флага доступа в сессии */
 		}
 		
 		if($access == 'yes')		/* Да. Доступ разрешён (после успешной авторизации) */
 		{
 			$this->access_yes();
-				//$this->session->unset_userdata('access');					/* Запрет доступа. Сброс флага доступа в сессии */
 		}
 	}
 
@@ -86,8 +76,6 @@ class Divided_access_controller extends CI_Controller {
 	 */
 	protected function access_no()
 	{
-		//echo 'private function access_no()<br>';
-
 		/* (An example of using the own library) */
 		/* Заголовок для тэга <title> */
 		$data['title'] = 'Форма входа | '.$this->own_library->get_title();
@@ -108,14 +96,6 @@ class Divided_access_controller extends CI_Controller {
 	 */
 	protected function access_yes()
 	{
-		//echo 'private function access_yes()<br>';
-		
-			//echo'$_SESSION = '."\n<pre>";
-				//print_r($_SESSION);
-			//echo'</pre>';
-
-			//$this->session->unset_userdata('access');					/* (Debug). Запрет доступа. Сброс флага доступа в сессии */
-			
 		/* Заголовок для тэга <title> */
 		$data['title'] = 'Разделённый доступ | '.$this->own_library->get_title();
 
@@ -142,23 +122,7 @@ class Divided_access_controller extends CI_Controller {
 	 */
 	protected function get_left_menu()
 	{
-			//echo'$_SESSION = '."\n<pre>";
-			//	print_r($_SESSION);
-			//echo'</pre>';
-			
-			//echo'$_SESSION["pages_group_access"] = '."\n<pre>";
-			//print_r($_SESSION['pages_group_access']);
-			//echo'</pre>';
-	
 		$data_menu['pages_group_access'] = $this->session->userdata('pages_group_access');
-			//echo'$data_menu["pages_group_access"] = '."\n<pre>";
-			//	print_r($data_menu['pages_group_access'] );
-			//echo'</pre>';
-			
-		//$data_menu['names_pgs'] = $this->session->userdata('names_pgs');
-		//	echo'$data_menu["names_pgs"] = '."\n<pre>";
-		//		print_r($data_menu['names_pgs'] );
-		//	echo'</pre>';
 		
 		/* Подгружаем view left_menu_view.php ('TRUE' - локадльно грузим НЕ через http(s):// ) */
 		return $this->load->view('themes/starter_template/left_menu_view', $data_menu, TRUE);
@@ -174,17 +138,10 @@ class Divided_access_controller extends CI_Controller {
 	 */
 	protected function get_content_first_page_group()
 	{
-			//echo'$_SESSION = '."\n<pre>";
-			//	print_r($_SESSION);
-			//echo'</pre>';
-
 		$name_first_page = $this->session->userdata('name_first_page');
 		
 		/* Содержание названной страницы */
 		$name_first_page_group = $this->divided_access_model->read_content_named_page($name_first_page);
-			//echo "\n<pre>".'$name_first_page_group = ';
-			//	print_r($name_first_page_group);
-			//echo "<pre>\n";
 
 		$data_page['content_page'] = $name_first_page_group;
 		
@@ -207,11 +164,7 @@ class Divided_access_controller extends CI_Controller {
 		$this->session->unset_userdata('access');
 
 		/* Переход на главную страницу */
-			//header( "Location: ".$_SERVER['REQUEST_SCHEME'] .'://'. $_SERVER['HTTP_HOST']);
-			/* https://www.codeigniter.com/user_guide/helpers/url_helper.html?highlight=redirect#redirect */
-		// with 301 redirect
-		//redirect('/article/13', 'location', 301);
-		redirect(($_SERVER['REQUEST_SCHEME'] .'://'. $_SERVER['HTTP_HOST']), 'location');
+		redirect(('https://'. $_SERVER['HTTP_HOST']), 'location');
 	}	
 	
 	
