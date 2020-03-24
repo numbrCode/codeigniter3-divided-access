@@ -25,3 +25,55 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		</form>
 <br><br><br>
 	</div> <!-- /container -->
+	<div class="container">
+		<ul>
+			<li>
+				1. https://divided-access.yoursite.ru/
+"Форма входа | Пример простого разделённого доступа на php-framework CodeIgniter 3 + MySQL + AJAX (jQuery) +  css-fw Bootstrap 3."
+			</li>
+
+			<li>
+				2. Используется протокол https://
+			</li>
+
+			<li>
+				3. СУБД MySQL. Дамп базы данных в /divided_access_.sql
+			</li>
+
+			<li>
+				4. Проверка по входу:<br>
+					4.1. Длина имени >= 4.<br>
+					4.2. Длина пароля >= 3.
+			</li>
+
+			<li>
+				5. Пары логигов и паролей для входа по группам:<br>
+					5.1. Группа 1: ('ПИЦЦА', 'ТЕСТО', 'РОЛЛЫ', 'РИС')<br>
+				 manager	:	123456;<br>
+					5.2. Группа 2: ('ПИЦЦА', 'ТЕСТО')<br>
+				china	:	123456;<br>
+					5.3. Группа 3: ('РОЛЛЫ', 'РИС')<br>
+				sushi	:	123456;
+			</li>
+
+			<li>
+				6. Дизайн мини web-site выбран типовой для Bootstrap 3.
+			</li>	
+
+			<li>
+				7. Используются программные продукты:<br>
+					7.1. Framework fm-php CodeIgniter 3 (последняя доступная версия).<br>
+					7.2. fm-css Bootstrap 3 (последняя доступная версия).<br>
+					7.3. СУБД MySQL 5.<br>
+					7.4. Всесторонне используются технологии jQuery и AJAX.
+			</li>
+
+			<li>
+				8. Code licensed under MIT,
+			</li>
+
+			<li>
+				9. Documentation under CC BY 3.0.
+			</li>
+		</ul>
+	</div> <!-- /container -->
