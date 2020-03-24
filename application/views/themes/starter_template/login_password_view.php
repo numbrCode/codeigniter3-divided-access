@@ -33,7 +33,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			</li>
 
 			<li>
-				2. Используется протокол https://
+				2. Длдя повышения безопасности может использоваться протокол https:// .
 			</li>
 
 			<li>
@@ -49,11 +49,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			<li>
 				5. Пары логигов и паролей для входа по группам:<br>
 					5.1. Группа 1: ('ПИЦЦА', 'ТЕСТО', 'РОЛЛЫ', 'РИС')<br>
-				 manager	:	123456;<br>
+				 manager|123456;<br>
 					5.2. Группа 2: ('ПИЦЦА', 'ТЕСТО')<br>
-				china	:	123456;<br>
+				china|123456;<br>
 					5.3. Группа 3: ('РОЛЛЫ', 'РИС')<br>
-				sushi	:	123456;
+				sushi|123456;
 			</li>
 
 			<li>

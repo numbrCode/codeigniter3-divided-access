@@ -105,9 +105,12 @@ class Divided_access_controller extends CI_Controller {
 		/* Получить содержание первой страницы группы */
 		$page_content['content_first_page_group'] = $this->get_content_first_page_group();
 
+		/* Получить Имя пользователя in DB из сессии */
+		$page_content['log_access'] = $this->session->get_userdata('log_access');
+
 		/* Подгружаем view content_divided_access_view.php ('TRUE' - локадльно грузим НЕ через http(s):// ) */
 		$data['content'] = $this->load->view('themes/starter_template/content_divided_access_view', $page_content, TRUE);
-		
+
 		/* Основной view */
 		$this->load->view('themes/starter_template/divided_access_view', $data);
 	}
@@ -164,7 +167,8 @@ class Divided_access_controller extends CI_Controller {
 		$this->session->unset_userdata('access');
 
 		/* Переход на главную страницу */
-		redirect(('https://'. $_SERVER['HTTP_HOST']), 'location');
+		// redirect(('https://'. $_SERVER['HTTP_HOST']), 'location');
+		redirect(('http://'. $_SERVER['HTTP_HOST']), 'location');
 	}	
 	
 	

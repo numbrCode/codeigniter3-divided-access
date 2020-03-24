@@ -15,8 +15,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						<div class="col-md-5 col-md-offset-1">
 							 <!-- Logo -->
 							 <div class="logo">
-									<h1><a href="https://divided-access.yoursite.com/">Разделённый доступ</a><span class="text-center own-exit"><a href="index.php/divided_access/exit_content_divided_access" title="Выход (exit)."><button id="btnExitAdmin" class="btn btn-default" type="submit"><span class="glyphicon glyphicon-log-out" aria-hidden="true"></span></button></a>
-		</span></h1>
+									<!-- <h1><a href="https://divided-access.yoursite.com/">Разделённый доступ</a><span class="text-center own-exit"><a href="index.php/divided_access/exit_content_divided_access" title="Выход (exit)."><button id="btnExitAdmin" class="btn btn-default" type="submit"><span class="glyphicon glyphicon-log-out" aria-hidden="true"></span></button></a> -->
+
+									<h1><a href="http://ci3-divided-access.loc/">Разделённый доступ</a><span class="text-center own-exit"><a href="index.php/divided_access/exit_content_divided_access" title="Выход (exit)."><button id="btnExitAdmin" class="btn btn-default" type="submit"><span class="glyphicon glyphicon-log-out" aria-hidden="true"></span></button></a></span>
+									</h1>
+									<h4>Пользователь : <?php echo $log_access['log_access']; ?></h4>
 									
 							 </div>
 						</div>
