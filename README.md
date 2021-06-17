@@ -11,18 +11,27 @@ https://codeigniter.com/userguide3/installation/index.html .
 (Чтобы установить codeigniter3 на свой хостинг, воспользуйтесь ресурсом:
 https://codeigniter.com/userguide3/installation/index.html .) 
 
-2. Access via https: //  
-(For example: https://divided-access.yoursite.com) .  
-(Доступ через https://  
-( Например: https://divided-access.yoursite.com ) .)
+2. Download Composer: https://getcomposer.org/download/ .
 
-3. Replace yoursite.com in all files with your domain .  
-(Замените yoursite.com во всех файлах на свой домен .)
+3. Go to your project dir  
+(Перейдите в каталог вашего проекта)  
+`cd <your project>`
 
-4. Read the file /readme_login_password_.txt .  
-(Прочитайте файл /readme_login_password_.txt .)
+4. Run the commands:  
+(Выполните команды:)  
+`git clone https://github.com/numbrCode/codeigniter3-divided-access.git`    
+`composer update`
 
-6. MySQL database, file "divided_access_.sql".  
-(База данных MySQL, файл "divided_access_.sql".)
+5. Read the file  
+(Прочитайте файл)  
+./readme_login_password_.txt .
 
-5. Screenshots в /screenshots/screen-divided-access0*.png .
+6. MySQL database, file  
+(База данных MySQL, файл)  
+./divided_access_.sql.
+
+7. Screenshots in (в)  
+./screenshots/screen-divided-access0*.png .
+
+8. I will be glad to your suggestions and wishes.  
+(Буду рад вашим предложениям и пожеланиям.)
