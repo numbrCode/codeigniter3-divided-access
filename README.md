@@ -6,10 +6,9 @@ Login form | An example of a simple shared access to the php-framework CodeIgnit
 
 (Форма входа | Пример простого разделённого доступа на php-framework CodeIgniter 3 + MySQL + AJAX (jQuery) +  css-fw Bootstrap 3.)
 
-1. To install codeigniter3 on your hosting, use the resource:
-https://codeigniter.com/userguide3/installation/index.html .  
-(Чтобы установить codeigniter3 на свой хостинг, воспользуйтесь ресурсом:
-https://codeigniter.com/userguide3/installation/index.html .) 
+1. To install codeigniter3 on your hosting, use the resource:  
+(Чтобы установить codeigniter3 на свой хостинг, воспользуйтесь ресурсом:)  
+https://codeigniter.com/userguide3/installation/index.html .
 
 2. Download Composer: https://getcomposer.org/download/ .
 
