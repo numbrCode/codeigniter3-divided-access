@@ -10,16 +10,16 @@ https://codeigniter.com/userguide3/installation/index.html .)
 
 2. Access via https: //  
 (For example: https://divided-access.yoursite.com) .  
-(Доступ через https://
+(Доступ через https://  
 ( Например: https://divided-access.yoursite.com ) .)
 
 3. Replace yoursite.com in all files with your domain .  
 (Замените yoursite.com во всех файлах на свой домен .)
 
-4. Read the file /readme_login_password_.txt (english).  
-(Прочитайте файл /readme_login_password_ru_.txt (на русском) .)
+4. Read the file /readme_login_password_.txt .  
+(Прочитайте файл /readme_login_password_.txt .)
 
 6. MySQL database, file "divided_access_.sql".  
-(База данных МуСКЛ, файл "divided_access_.sql".)
+(База данных MySQL, файл "divided_access_.sql".)
 
 5. Screenshots в /screenshots/screen-divided-access0*.png .
