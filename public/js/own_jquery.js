@@ -8,9 +8,9 @@
 
 $(document).ready(function()
 {
-	//var documentLocalHref = document.location.href.toString();
+	var documentLocalHref = document.location.href.toString();
 	// var documentLocalHref = 'https://divided-access.yoursite.com/';
-	var documentLocalHref = 'http://ci3-divided-access.loc/';
+	// var documentLocalHref = 'http://ci3-divided-access.loc/';
 		console.log('documentLocalHref = '+documentLocalHref);
 
 
