@@ -6,9 +6,9 @@ Login form | An example of a simple shared access to the php-framework CodeIgnit
 
 (Форма входа | Пример простого разделённого доступа на php-framework CodeIgniter 3 + MySQL + AJAX (jQuery) +  css-fw Bootstrap 3.)
 
-1. To install codeigniter3 on your hosting, use the resource:  
-(Чтобы установить codeigniter3 на свой хостинг, воспользуйтесь ресурсом:)  
-https://codeigniter.com/userguide3/installation/index.html .
+1. Run the command:  
+(Выполните команду:)  
+`git clone https://github.com/numbrCode/codeigniter3-divided-access.git <your project>`  
 
 2. Download Composer: https://getcomposer.org/download/ .
 
@@ -16,10 +16,11 @@ https://codeigniter.com/userguide3/installation/index.html .
 (Перейдите в каталог вашего проекта)  
 `cd <your project>`
 
-4. Run the commands:  
-(Выполните команды:)  
-`git clone https://github.com/numbrCode/codeigniter3-divided-access.git`    
-`composer update`
+4. Run the command:  
+(Выполните команду:)  
+`composer.phar update`  
+or  
+`php composer.phar update`
 
 5. Read the file  
 (Прочитайте файл)  
@@ -31,6 +32,3 @@ https://codeigniter.com/userguide3/installation/index.html .
 
 7. Screenshots in (в)  
 ./screenshots/screen-divided-access0*.png .
-
-8. I will be glad to your suggestions and wishes.  
-(Буду рад вашим предложениям и пожеланиям.)
