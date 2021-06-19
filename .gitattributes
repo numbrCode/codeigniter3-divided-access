@@ -1,2 +1,3 @@
 *.* linguist-language=PHP
 *.js linguist-language=JAVASCRIPT
+*.css linguist-language=CSS
